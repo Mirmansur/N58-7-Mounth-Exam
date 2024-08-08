@@ -64,11 +64,11 @@ const Home = () => {
                   {" "}
                   Good afternoon{" "}
                 </h1>
-                <div className="flex flex-wrap justify-center gap-5">
+                <div className="flex flex-wrap justify-center gap-2">
                   {toplists?.map((item) => (
                     <div
                       key={item.id}
-                      className="  flex w-[40%] items-center gap-5 font-semibold bg-eight t  "
+                      className="  flex w-[40%] items-center gap-5 font-semibold bg-eight   "
                     >
                       <img
                         src={item.images[0].url}

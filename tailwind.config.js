@@ -24,7 +24,7 @@ export default {
         twelve: "#DEF628",
         purple: "rgba(96, 78, 193, 1)",
         red: "rgba(18, 18, 18, 1)",
-        yellow: "#F9C23C",
+        yellow: "#272525b2",
       },
 
       fontFamily: {
