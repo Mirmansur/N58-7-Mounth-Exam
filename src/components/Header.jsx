@@ -4,10 +4,10 @@ import { FiSearch } from "react-icons/fi";
 import { IoLibrary } from "react-icons/io5";
 import { FaPlus } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
-import imgs from "../assetse/imgs.png";
+
 const Header = () => {
   return (
-    <div className="Header bg-one text-two p-4  flex justify-between h-[2744px] w-[310px]  left-0 z-10 ">
+    <div className="Header bg-one text-two p-2  flex justify-between fixed left-0 w-[230px] ">
       <div className="container">
         <div className="All-two flex flex-col justify-between ">
           <div className="header ">
@@ -128,13 +128,6 @@ const Header = () => {
                   Mixed Feelings
                 </a>
               </div>
-            </div>
-            <div className="header-two flex  mt-[1172px]">
-              <img
-                src={imgs}
-                alt=""
-                className=" border-none rounded-2xl w-[310px] h-[310px]"
-              />
             </div>
           </div>
         </div>

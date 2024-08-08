@@ -3,7 +3,7 @@ import { TbBrandXFilled } from "react-icons/tb";
 import { IoPerson } from "react-icons/io5";
 const Footer = () => {
   return (
-    <div className="Footer bg-one text-two p-2 h-[2744px]   ">
+    <div className="Footer bg-one text-two p-2 fixed right-0   ">
       <div className="container">
         <div className="footer flex flex-col ">
           <div className="foot-one flex items-center gap-20 text-two opacity-[70%]">

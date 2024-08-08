@@ -19,8 +19,9 @@ export default {
         seven: "#3333A3",
         eight: "rgba(255, 255, 255, 0.233);",
         nine: " #3333a3 5.09%, #121212 33.4%",
-        ten: "#FCD53F",
-        eleven: "#FFED63",
+        ten: "#000000e0",
+        eleven: "#63CF6C",
+        twelve: "#DEF628",
       },
 
       fontFamily: {

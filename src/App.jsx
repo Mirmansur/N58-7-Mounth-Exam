@@ -1,46 +1,44 @@
+import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import { useFetch } from "./hooks/useFetch";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Like from "./pages/Like";
 import SinglePage from "./pages/SinglePage";
+import Play from "./components/Play";
+import Loading from "./components/Loading";
 
 const App = () => {
-  // const getPlaylist = async () => {
-  //   try {
-  //     const res = await fetch(
-  //       "https://api.spotify.com/v1/browse",
-  //       {
-  //         headers: {
-  //           Authorization: localStorage.getItem("access_token"),
-  //         },
-  //       }
-  //     );
-  //     const playlists = await res.json();
+  const [loading, setLoading] = useState(false);
 
-  //     const renderPlaylists = playlists.playlists.items;
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setLoading(true);
+      setTimeout(() => setLoading(false), 1000);
+    };
 
-  //     console.log(renderPlaylists);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
+    handleRouteChange();
 
-  // getPlaylist();
-
+    window.addEventListener("popstate", handleRouteChange);
+    return () => window.removeEventListener("popstate", handleRouteChange);
+  }, []);
+  if (loading) {
+    return <Loading />;
+  }
   return (
-    <div className="">
-      <div className="">
-        <Router>
+    <Router>
+      <div className="relative min-h-screen bg-gray-100">
+        <div className="divs  flex justify-center items-start w-full bg-one">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/like" element={<Like />} />
             <Route path="/single-page/:id" element={<SinglePage />} />
           </Routes>
-        </Router>
+        </div>
+
+        <Play />
       </div>
-    </div>
+    </Router>
   );
 };
 
