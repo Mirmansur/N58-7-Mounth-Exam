@@ -80,7 +80,7 @@ const SinglePage = ({ product }) => {
       <Header />
       <div className="container   ">
         <div className="flexss  flex flex-col mx-auto px-4 py-6 bg-ten text-two w-[800px]">
-          <div className="class bg-yellow-500 ">
+          <div className="class bg-yellow ">
             <div className="btns p-2 ml-[20px] flex  items-center gap-3">
               <button className="border-none w-[40px] h-[40px] bg-one text-two rounded-[50%] p-2">
                 <FaChevronLeft className=" flex justify-center text-[20px] " />
