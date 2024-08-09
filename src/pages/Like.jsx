@@ -45,7 +45,7 @@ const Like = () => {
   return (
     <div className="Like bg-black w-[800px]">
       <Header />
-      <div className="container">
+      <div className="container bg-one h-[2000px]">
         <div className="likes bg-purple p-4 flex  items-center gap-5">
           <div className="likes-one  shadow-black border-none  w-[297px] bg-red h-[297px] flex  items-center justify-center rounded-xl">
             <CiHeart className="text-[200px] text-white" />
